@@ -10,11 +10,11 @@ Template.chatInput.events({
 			tmpl.$('.message-input').val('');
 		});
 	},
-	'input .message-input' : function(e) {
+	'keyup .message-input' : function(e, tmpl) {
 		e.preventDefault();
 
 		var message = tmpl.$('.message-input').val().trim();
-	    if (e.keyCode === 13 && !e.shiftKey && message ) {
+	    if (e.keyCode === 13 && message ) {
 	    	sendMessage(message, function() {
 				Materialize.toast('Sent');
 				tmpl.$('.message-input').val('');

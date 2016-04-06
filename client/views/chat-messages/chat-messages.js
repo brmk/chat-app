@@ -3,3 +3,7 @@ Template.chatMessages.helpers({
 		return Messages.find().fetch();
 	}
 });
+
+Template.chatMessages.onCreated(function(){
+	this.subscribe('messages');
+})

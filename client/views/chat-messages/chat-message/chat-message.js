@@ -7,3 +7,8 @@ Template.chatMessage.helpers({
 	    return Meteor.users.findOne({ _id: this.from }).username;
 	}
 });
+
+Template.chatMessage.onRendered(function(){
+	var $scrollable = $('.chat-messages');
+	$scrollable.scrollTop($scrollable.prop("scrollHeight"));
+});
