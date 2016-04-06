@@ -6,4 +6,5 @@ Template.chatMessages.helpers({
 
 Template.chatMessages.onCreated(function(){
 	this.subscribe('messages');
+	this.subscribe('users');
 })

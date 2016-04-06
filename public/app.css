@@ -1,0 +1,78 @@
+html,body {
+	background-color: #ececec;
+}
+
+.no-margin {
+	margin: 0 !important;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 601px){
+  #toast-container {
+    min-width: 8%;
+    top: 10%;
+    right: 7%;
+    bottom: auto;
+    left: auto;
+
+  }
+}
+.toast {
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0px 24px;
+}
+
+/* Chat */
+.chat-form {
+	border-top: 1px solid #ececec;
+    background-color: white;
+}
+
+.chat-message-form .input-field{
+    width: calc(100% - 90px);
+    display: inline-block;
+}
+
+.chat-message-form .send-message{
+	width: 75px;
+    margin-bottom: 25px;
+}
+
+.chat-messages {
+    overflow: scroll;
+	height: calc(100vh - 120px - 64px);
+}
+
+.chat-message {
+    padding: 20px 10px;
+    background-color: white;
+    margin-top: 5px;
+    min-height: 90px;
+    width: calc(100% - 60px);
+    display: inline-block;
+}
+
+.chat-message-avatar {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/* Header */
+
+.profile-dropdown-button {
+    line-height: 64px;
+    padding: 7px 15px;
+}
+.user-name {
+	line-height: 1;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+nav .dropdown-content {
+    margin-top: 64px;
+}
+nav .dropdown-content li > a, .dropdown-content li > span {
+    padding: 20px 16px;
+}
