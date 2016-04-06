@@ -1,0 +1,17 @@
+<template name="profileDropdown">
+	<a class="profile-dropdown-button valign-wrapper" href="#!" data-activates="profile-dropdown">
+		<span class="user-name">
+			{{currentUser.username}}
+		</span>
+		<span class="user-avatar"> 
+			{{> avatar user=currentUser shape="circle" size="middle"}}
+		</span>
+	</a>
+	<ul id='profile-dropdown' class="dropdown-content">
+		<li class="logout-button">
+			<a href="#">
+				Logout
+			</a>
+		</li>
+	</ul>
+</template>

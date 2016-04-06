@@ -1,0 +1,14 @@
+<template name="header">
+	<nav>
+		<div class="nav-wrapper">
+			<span class="brand-logo">Chat app</span>
+			{{#if currentUser}}
+				<ul class="right"> 
+					<li>
+						{{>profileDropdown}}
+					</li>
+				</ul>
+			{{/if}}
+		</div>
+	</nav>
+</template>

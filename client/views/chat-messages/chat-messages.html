@@ -1,0 +1,9 @@
+<template name="chatMessages">
+	<div class="row chat-messages no-margin">
+		<div class="col s12">
+			{{#each messages}}
+				{{> chatMessage}}
+			{{/each}}
+		</div>
+	</div>
+</template>

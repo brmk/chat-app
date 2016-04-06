@@ -1,1 +1,0 @@
-meteor run --settings private/settings/dev.json
