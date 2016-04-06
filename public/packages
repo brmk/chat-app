@@ -1,7 +1,7 @@
 materialize:materialize
-reactive-var
 planettraining:material-design-icons-font
-useraccounts:materialize
 accounts-password
+brmk:meteorly-label
 utilities:avatar
 momentjs:moment
+useraccounts:materialize
