@@ -16,7 +16,6 @@ Template.chatInput.events({
 		var message = tmpl.$('.message-input').val().trim();
 	    if (e.keyCode === 13 && message ) {
 	    	sendMessage(message, function() {
-				Materialize.toast('Sent');
 				tmpl.$('.message-input').val('');
 			});
 		}
