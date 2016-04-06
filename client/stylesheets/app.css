@@ -35,12 +35,11 @@ html,body {
 
 .chat-message-form .send-message{
 	width: 75px;
-    margin-bottom: 25px;
 }
 
 .chat-messages {
-    overflow: scroll;
-	height: calc(100vh - 120px - 64px);
+    overflow-y: scroll;
+    height: calc(100vh - 75px - 64px);
 }
 
 .chat-message {

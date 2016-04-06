@@ -3,11 +3,12 @@
 		<div class="chat-message-avatar">
 			{{>avatar userId=from
 						  size="middle"
-		                  shape="circle" }} 
+		                  shape="circle"
+		                  bgColor=user.color}} 
 	    </div>
 		<div class="chat-message dont-break-out">
 			<div class="message-info" style="margin-bottom: 5px;">
-				<a href="#">{{username}}</a> :  
+				<a href="#">{{user.username}}</a> :  
 				<div class="right"> {{fromNow}} </div>
 		    </div>
 

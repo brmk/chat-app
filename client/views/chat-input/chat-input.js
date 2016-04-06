@@ -1,24 +1,13 @@
 Template.chatInput.events({
-	'click .send-message' : function(e, tmpl) {
+	'submit .chat-message-form' : function(e, tmpl) {
 		e.preventDefault();
 
 		var message = tmpl.$('.message-input').val().trim();
 		if(!message) return;
 
 		sendMessage(message, function() {
-			Materialize.toast('Sent');
 			tmpl.$('.message-input').val('');
 		});
-	},
-	'keyup .message-input' : function(e, tmpl) {
-		e.preventDefault();
-
-		var message = tmpl.$('.message-input').val().trim();
-	    if (e.keyCode === 13 && message ) {
-	    	sendMessage(message, function() {
-				tmpl.$('.message-input').val('');
-			});
-		}
 	}
 
 });
