@@ -39,8 +39,8 @@ html,body {
 }
 
 .chat-messages {
-    overflow: scroll;
-	height: calc(100vh - 120px - 64px);
+    overflow-y: scroll;
+    height: calc(100vh - 72px - 64px);
 }
 
 .chat-message {
