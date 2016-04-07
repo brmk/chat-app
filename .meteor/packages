@@ -20,8 +20,8 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 materialize:materialize
 planettraining:material-design-icons-font
 accounts-password
-brmk:meteorly-label
 utilities:avatar
 momentjs:moment
 useraccounts:materialize
 mizzao:timesync
+emojione:emojione

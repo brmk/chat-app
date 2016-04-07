@@ -1,5 +1,5 @@
 Template.header.events({
-	'click .logout-button' : function() {
-		Meteor.logout();
-	}
+    'click .logout' : function() {
+        Meteor.logout();
+    }
 });

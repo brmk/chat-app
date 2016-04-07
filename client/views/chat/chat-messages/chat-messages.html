@@ -1,0 +1,10 @@
+<template name="chatMessages">
+    <div class="chat-messages ">
+        <div class="chat-messages-container">
+
+                {{#each messages}}
+                    {{> chatMessage}}
+                {{/each}}
+        </div>
+    </div>
+</template>

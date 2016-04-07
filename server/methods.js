@@ -1,14 +1,11 @@
 Meteor.methods({
-	sendMessage : function(message) {
-		var userId = this.userId,
-			currentMoment = new moment();
-
-		var messageObj = {
-			from : userId,
-			message : message,
-			createdAt : currentMoment 
-		}
-
-		Messages.insert(messageObj);
-	}
+    'sendMessage' : function(message) {
+        var userId = this.userId,
+            date = new moment();
+        Messages.insert({
+            from: userId,
+            message : message,
+            createdAt : date
+        });
+    }
 });

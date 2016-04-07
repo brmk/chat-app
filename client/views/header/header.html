@@ -1,14 +1,10 @@
 <template name="header">
-	<nav>
-		<div class="nav-wrapper">
-			<span class="brand-logo center">Chat app</span>
-			{{#if currentUser}}
-				<ul class="right"> 
-					<li>
-						{{>profileDropdown}}
-					</li>
-				</ul>
-			{{/if}}
-		</div>
-	</nav>
+    <nav class="row no-margin">
+        <div class="nav-wrapper col s12">
+            <div class="brand-logo"> TNTU chat </div>
+            <div class="right">
+                <a href="#" class="logout"> Log out </a>
+            </div>
+        </div>
+    </nav>
 </template>

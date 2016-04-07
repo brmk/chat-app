@@ -1,0 +1,18 @@
+<head>
+    <title> TNTU chat </title>
+</head>
+
+<body>
+
+    {{> header}}
+
+    {{#unless currentUser}}
+        {{> atForm}}
+    {{else}}
+        <div class="row no-margin">
+            {{> users}}
+            {{> chat}}
+        </div>
+    {{/unless}}
+
+</body>
