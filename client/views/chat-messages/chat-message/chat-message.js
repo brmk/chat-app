@@ -1,10 +1,10 @@
 Template.chatMessage.helpers({
 	fromNow : function () {
-		return moment(this.createdAt).fromNow();
+		return moment(this.createdAt).from(TimeSync.serverTime());
 	},
 
-	username: function () {
-	    return Meteor.users.findOne({ _id: this.from }).username;
+	user: function () {
+	    return Meteor.users.findOne({ _id: this.from });
 	}
 });
 
